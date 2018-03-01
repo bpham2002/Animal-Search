@@ -22,12 +22,12 @@
                      var image_animate = response.data[i].images.fixed_height.url
                      var rating = response.data[i].rating
                      if (i < 3) {
-                         $("#2").append($("<div class = 'col-md-4 m-1'><P>Rate:'" + JSON.stringify(rating) + "'</P><img src='" + image_still + "' data-still='" + image_still + "' data-animate='" + image_animate + "' data-state= 'still' id = '" + i + "' class= 'gif mx-1'></div>"))
+                         $("#2").append($("<div class = 'col-md-4'><P>Rate:'" + JSON.stringify(rating) + "'</P><img src='" + image_still + "' data-still='" + image_still + "' data-animate='" + image_animate + "' data-state= 'still' id = '" + i + "' class= 'gif mx-auto d-block'></div>"))
                      } else if (i > 2 && i < 6) {
-                         $("#1").append($("<div class = 'col-md-4 m-1'><P>Rate:'" + JSON.stringify(rating) + "'</P><img src='" + image_still + "' data-still='" + image_still + "' data-animate='" + image_animate + "' data-state= 'still' id = '" + i + "' class= 'gif mx-1'></div>"))
+                         $("#1").append($("<div class = 'col-md-4'><P>Rate:'" + JSON.stringify(rating) + "'</P><img src='" + image_still + "' data-still='" + image_still + "' data-animate='" + image_animate + "' data-state= 'still' id = '" + i + "' class= 'gif mx-auto d-block'></div>"))
 
                      } else {
-                         $("#0").append($("<div class = 'col-md-3 m-1'><P>Rate:'" + JSON.stringify(rating) + "'</P><img src='" + image_still + "' data-still='" + image_still + "' data-animate='" + image_animate + "' data-state= 'still' id = '" + i + "' class= 'gif mx-1'></div>"))
+                         $("#0").append($("<div class = 'col-md-3'><P>Rate:'" + JSON.stringify(rating) + "'</P><img src='" + image_still + "' data-still='" + image_still + "' data-animate='" + image_animate + "' data-state= 'still' id = '" + i + "' class= 'gif mx-auto d-block'></div>"))
 
                      }
 
